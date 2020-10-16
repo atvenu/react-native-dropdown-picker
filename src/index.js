@@ -13,12 +13,12 @@ import PropTypes from 'prop-types';
 
 // Icon
 import Feather from 'react-native-vector-icons/Feather';
-Feather.loadFont();
+
 
 class DropDownPicker extends React.Component {
     constructor(props) {
         super(props);
-
+        Feather.loadFont();
         let choice;
         let items = [];
         let defaultValueIndex; // captures index of first defaultValue for initial scrolling
